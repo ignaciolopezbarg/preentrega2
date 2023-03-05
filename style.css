@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body #encabezado {
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    align-items: center;
+    padding-top: -30px;
+    padding-bottom: 5px;
+    margin-left: 20%;
+}
+nav {
+    display: flex;
+    background-color: azure;
+    width: 100%;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: space-around;
+}
+section {
+    display: block;
+}
+main #fotos {
+    display: grid;
+    grid-template-areas:
+        "izq cent der"
+        "bot bot bot"
+        "parrafos parrafos parrafos";
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 80% 1fr 1fr;
+    column-gap: 2px;
+}
+.izq {
+    background-color: rgb(242, 255, 0);
+    grid-area: izq;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.cent {
+    background-color: rgba(222, 226, 235, 0.914);
+    grid-area: cent;
+}
+.der {
+    background-color: rgb(255, 80, 188);
+    grid-area: der;
+}
+.bot {
+    background-color: honeydew;
+    grid-area: bot;
+    text-align: center;
+    font-size: larger;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#parrafos {
+    grid-area: parrafos;
+    height: 20%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    width: 100%;
+    height: 10%;
+}
+#can {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+#pie {
+    display: inline-flex;
+    justify-content: space-around;
+}
+#num {
+    display: inline-flex;
+    justify-content: space-around;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.card {
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+}
+h5 {
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+}
