@@ -1,69 +1,75 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 body #encabezado {
-    display: flex;
+    background-color: aliceblue;
+    height: 25px;
+    width: auto;
+    display: inline-block;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    align-items: center;
-    padding-top: -30px;
-    padding-bottom: 5px;
-    margin-left: 20%;
+    font-size: 20px;
 }
+
 nav {
     display: flex;
     background-color: azure;
     width: 100%;
-    height: 20px;
+    height: 25px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     justify-content: space-around;
 }
+
+nav :hover {
+    background-color: rgba(0, 255, 200, 0.563);
+}
+
 section {
     display: block;
+    margin-left: 10px;
+    width: 100%;
+    max-height: 20%;
 }
+
 main #fotos {
+    max-height: 40% vp;
     display: grid;
     grid-template-areas:
         "izq cent der"
         "bot bot bot"
         "parrafos parrafos parrafos";
-    grid-template-columns: repeat(3, 30%);
-    grid-template-rows: 80% 1fr 1fr;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 70% 1.5fr 0.5fr;
     column-gap: 2px;
 }
+
 .izq {
-    background-color: rgb(242, 255, 0);
+    background-color: rgb(0, 255, 17);
     grid-area: izq;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 5px;
+
 }
+
 .cent {
     background-color: rgba(222, 226, 235, 0.914);
     grid-area: cent;
 }
+
 .der {
     background-color: rgb(255, 80, 188);
     grid-area: der;
 }
+
 .bot {
     background-color: honeydew;
     grid-area: bot;
     text-align: center;
     font-size: larger;
 }
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
+
 #parrafos {
     grid-area: parrafos;
-    height: 20%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-style: oblique;
@@ -71,6 +77,7 @@ p {
     margin-right: 5px;
     text-align: center;
 }
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -78,26 +85,31 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
 footer {
     display: flex;
     flex-direction: column;
     background-color: azure;
     width: 100%;
-    height: 10%;
+    max-height: auto;
 }
+
 #can {
     font-size: 15px;
     display: flex;
     justify-content: center;
 }
+
 #pie {
     display: inline-flex;
     justify-content: space-around;
 }
+
 #num {
     display: inline-flex;
     justify-content: space-around;
 }
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -105,13 +117,17 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
 .card {
     display: flex;
-    justify-content: right;
-    margin-right: 30px;
+    justify-content: left;
+    background-color: antiquewhite;
+    width: 30px;
+    margin-left: 10px;
 }
+
 h5 {
     display: flex;
-    justify-content: right;
-    margin-right: 30px;
+    justify-content: left;
+    margin-left: 10px;
 }
