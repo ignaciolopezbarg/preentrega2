@@ -80,6 +80,7 @@ main #fotos {
     font-style: oblique;
     margin-left: 5px;
 }
+
 #parrafos {
     height: auto;
 }
@@ -90,7 +91,6 @@ footer {
     background-color: azure;
     width: 100%;
     height: 25px;
-
 }
 
 #pie {
@@ -140,7 +140,6 @@ footer {
     text-align: center;
 }
 
-#cuerpo{
-
-    background-image: url(./imagenesweb/logo.jpeg) ;
+#cuerpo {
+    background-image: url(./imagenesweb/logo.jpeg);
 }
