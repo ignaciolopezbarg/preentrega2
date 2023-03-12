@@ -21,7 +21,8 @@
 </nav>
 <h1>FORMULARIO DE CONTACTO</h1>
 
-<body>
+<body id="cuerpo">
+    
     <div class="container">
         <form class="row g-4 mt-2">
 
@@ -37,7 +38,7 @@
 
             <div class="col-8">
                 <label for="Email" class="email">Email</label>
-                <input type="Email" class="form-control" id="Email" placeholder="ingrese email">
+                <input type="email" class="form-control" id="Email" placeholder="ingrese email">
             </div>
 
             <div class="col-12">
@@ -69,17 +70,38 @@
                     <input type="number" class="form-control" id="Telefono 2" placeholder="ingreseTelefono">
                 </div>
 
-                <div class="col-12 mt-2">
-                    <div class="form-check">
-                        <label for="form check" class="form-check-label">Acepto las condiciones</label>
-                        <input type="checkbox" class="form-check-label" id="checkbox">
-                    </div>
-                </div>
+                <label for="exampleFormControlTextarea1" class="form-label">Deje aqui sus comentarios</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="escriba aqui"></textarea>
+            </div>
 
-                <div class="col-12 mt-3 mb-3">
-                    <button type="submit" class="btn-btn-primary">
-                        Registrate</button>
+
+
+            <div class="col-12 mt-2">
+                <div class="form-check">
+                    <label for="form check" class="form-check-label">Acepto las condiciones</label>
+                    <input type="checkbox" class="form-check-label" id="checkbox">
                 </div>
+            </div>
+
+            <div class="col-12 mt-3 mb-3">
+                <button type="submit" class="btn-btn-primary">
+                    Registrate</button>
+            </div>
+
+            <div class="col-12 mt-3 mb-3">
+                <button type="reset" class="btn-btn-primary">
+                    Limpiar pantalla</button>
+            </div>
+
+            <div class="col-6 mb-3">
+                <label for="date">Fecha</label>
+                <input type="date" name="date">
+
+            </div>
+
+
+
 
         </form>
     </div>
