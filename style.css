@@ -6,112 +6,105 @@
 
 body {
     width: 100%;
-    height: 150vh;
+    height: auto;
 }
 
-body #encabezado {
+#encabezado {
     background-color: aliceblue;
+    width: 100%;
     height: 20px;
-    width: auto;
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     align-items: center;
-    text-align: center;
 }
 
 nav ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
     display: flex;
     background-color: azure;
     width: 100%;
-    height: auto;
-    padding-top: 5px;
-    padding-bottom: 5pxpx;
-    justify-content: space-evenly;
+    height: 20px;
     list-style-type: none;
+    justify-content: space-around;
 }
-
 
 nav :hover {
-    background-color: rgba(0, 255, 200, 0.563);
+    background-color: rgb(212, 255, 0);
 }
 
-section {
+section #comentarios {
     display: block;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     width: 100%;
     max-height: 20%;
 }
 
 main #fotos {
-    max-height: 40% vp;
+    max-height: 60%;
     display: grid;
+    padding: 1px;
     grid-template-areas:
         "izq cent der"
-        "izq cent der"
-        "izq cent der"
-        "bot bot bot";
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 30% 30% 30% 10%;
+        "bot bot bot"
+        "parrafos parrafos parrafos";
+    grid-template-columns: repeat(3, 31%);
+    grid-template-rows: 60% 20% 20%;
     column-gap: 2px;
 }
 
 .izq {
-    background-color: cornsilk;
+
     grid-area: izq;
 }
 
 .cent {
-    background-color: rgba(222, 226, 235, 0.914);
+
     grid-area: cent;
 }
 
 .der {
-    background-color: rgb(80, 162, 255);
+
     grid-area: der;
 }
 
 .bot {
     height: min-content;
-    background-color: honeydew;
+    background-color: rgb(227, 233, 238);
     grid-area: bot;
     text-align: center;
 }
 
-#parrafos {
+.parrafos {
     height: min-content;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 19px;
-    font-style: oblique;
-    margin-left: 5px;
-}
-
-#parrafos {
-    height: auto;
+    background-color: rgb(227, 233, 238);
+    grid-area: parrafos;
+    text-align: center;
 }
 
 footer {
     display: flex;
     flex-direction: column;
-    background-color: azure;
     width: 100%;
     height: 25px;
+    background-color: white;
+
+}
+
+footer :hover {
+    background-color: snow;
 }
 
 #pie {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-#finales {
+#finales .card {
     display: flex;
-    width: 100%;
-
-}
-
-.card {
-    display: flex;
-    background-color: antiquewhite;
     margin-left: 50%;
 }
 
@@ -140,6 +133,6 @@ footer {
     text-align: center;
 }
 
-#cuerpo {
+.foto {
     background-image: url(./imagenesweb/logo.jpeg);
 }
