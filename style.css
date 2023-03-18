@@ -5,14 +5,14 @@
 }
 
 body {
-    width: 100%;
-    height: auto;
+    width: max-content 1440px;
+    margin: 0 auto;
 }
 
 #encabezado {
     background-color: aliceblue;
-    width: 100%;
-    height: 20px;
+    width: 90%;
+    height: 18px;
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -24,7 +24,7 @@ nav ul {
     font-size: 12px;
     display: flex;
     background-color: azure;
-    width: 100%;
+    width: 85%;
     height: 20px;
     list-style-type: none;
     justify-content: space-around;
@@ -39,49 +39,75 @@ section #comentarios {
     margin-left: 5px;
     margin-right: 5px;
     width: 100%;
-    max-height: 20%;
-}
-
-main #fotos {
-    max-height: 60%;
-    display: grid;
-    padding: 1px;
-    grid-template-areas:
-        "izq cent der"
-        "bot bot bot"
-        "parrafos parrafos parrafos";
-    grid-template-columns: repeat(3, 31%);
-    grid-template-rows: 60% 20% 20%;
-    column-gap: 2px;
 }
 
 .izq {
-
     grid-area: izq;
 }
 
 .cent {
-
     grid-area: cent;
 }
 
 .der {
-
     grid-area: der;
 }
 
 .bot {
-    height: min-content;
+
     background-color: rgb(227, 233, 238);
     grid-area: bot;
     text-align: center;
 }
 
 .parrafos {
-    height: min-content;
+
     background-color: rgb(227, 233, 238);
     grid-area: parrafos;
     text-align: center;
+}
+
+main {
+    width: 100vh;
+}
+
+.bot {
+    font-size: 10px;
+    width: 80%;
+}
+
+.parrafos {
+    font-size: 10px;
+    width: 80%;
+}
+
+@media screen and (min-width:320px) and (max:480px) {
+    main #fotos .izq .cent .der .bot .parrafos {
+        grid-template-areas:
+            "izq "
+            "cent"
+            "der"
+            "bot "
+            "parrafos";
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    main #fotos {
+        width: 100vh;
+        height: auto;
+        grid-template-areas: "izq      cent        der"
+            "bot      bot        bot"
+            "parrafos parrafos parrafos";
+
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: 50% 25% 25%;
+    }
 }
 
 footer {
@@ -90,7 +116,6 @@ footer {
     width: 100%;
     height: 25px;
     background-color: white;
-
 }
 
 footer :hover {
@@ -111,7 +136,7 @@ footer :hover {
 .misc {
     display: flex;
     background-color: antiquewhite;
-    margin-left: 50%;
+    margin: 0 auto;
 }
 
 .nuevostitulos {
