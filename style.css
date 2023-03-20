@@ -57,8 +57,8 @@ main #fotos {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 60% 1fr 1fr;
     grid-template-areas: "izq      cent        der"
-        "bot      bot        bot"
-        "parrafos parrafos parrafos";
+                         "bot      bot        bot"
+                         "parrafos parrafos parrafos";
 
 }
 
@@ -107,15 +107,13 @@ main #fotos {
 @media screen and (max-width:650px) {
     main #fotos {
         grid-template-columns: 100%;
-        grid-template-rows: 25% 25% 25% 15% 10%;
+        grid-template-rows: 23% 24% 26% 13% 10%;
         grid-template-areas: "izq "
             "cent"
             "der"
             "bot"
             "parrafos";
-
     }
-
     nav ul {
         font-size: 11px;
     }
@@ -177,6 +175,7 @@ footer :hover {
 
 #consulta {
     background-color: blanchedalmond;
+    width: 95%;
 }
 
 details {
@@ -187,6 +186,9 @@ details {
 }
 
 summary {
-    list-style-type: square;
+    list-style-type: circle;
+}
 
+#muñeco p {
+    font-size: 15px;
 }
