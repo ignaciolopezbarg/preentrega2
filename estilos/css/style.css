@@ -5,18 +5,12 @@
 }
 
 body {
-    width: max-content 1440px;
     margin: 0 auto;
 }
 
-#encabezado {
+h1 {
     background-color: aliceblue;
-    width: 90%;
-    height: 18px;
-    display: flex;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-    align-items: center;
+    margin: 0 auto;
 }
 
 nav ul {
@@ -42,48 +36,59 @@ h2 {
     background-color: gainsboro;
 }
 
-section #comentarios {
-    display: block;
-    margin-left: 5px;
+.bienvenida {
+    display: grid;
     width: 95%;
+    grid-template-areas: "comentarios silueta";
+    grid-template-columns: 65% 30%;
+    grid-template-rows: auto;
+    padding: 5px;
+}
+
+.comentarios {
+    grid-area: comentarios;
+    margin-left: 3px;
     border: 1px solid blue;
     border-radius: 8px;
 }
 
+.silueta {
+    grid-area: silueta;
+    border: 1px solid blue;
+    border-radius: 8px;
+    margin: 2rem;
+    width: 70%;
+    height: 90%;
+}
+
 main #fotos {
-    width: 98%;
+    width: 100%;
     padding: 3px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 60% 1fr 1fr;
     grid-template-areas: "izq      cent        der"
-                         "bot      bot        bot"
-                         "parrafos parrafos parrafos";
+        "bot      bot        bot"
+        "parrafos parrafos parrafos";
 
 }
 
 .izq {
     grid-area: izq;
-    border: 1px solid blue;
     margin-left: 2px;
-    padding-left: 5px;
-    border-radius: 8px;
-
+    margin-top: 2rem;
 }
 
 .cent {
     grid-area: cent;
-    border: 1px solid blue;
     margin-left: 2px;
-    border-radius: 8px;
+    margin-top: 2rem;
 }
-
 
 .der {
     grid-area: der;
-    border: 1px solid blue;
     margin-left: 2px;
-    border-radius: 8px;
+    margin-top: 2rem;
 }
 
 .bot {
@@ -93,6 +98,7 @@ main #fotos {
     border: 1px solid blue;
     margin-left: 2px;
     border-radius: 8px;
+    margin-top: 1rem;
 }
 
 .parrafos {
@@ -102,46 +108,47 @@ main #fotos {
     border: 1px solid blue;
     margin-left: 2px;
     border-radius: 8px;
+    margin-top: 1rem;
+
 }
 
 @media screen and (max-width:650px) {
     main #fotos {
-        grid-template-columns: 100%;
-        grid-template-rows: 23% 24% 26% 13% 10%;
+        grid-template-columns: auto;
+        grid-template-rows: 25% 25% 25% 15% 10%;
         grid-template-areas: "izq "
             "cent"
             "der"
             "bot"
             "parrafos";
     }
-    nav ul {
-        font-size: 11px;
-    }
 }
 
-footer {
+nav ul {
+    font-size: 11px;
+}
+
+footer div {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 60%;
     height: auto;
-    background-color: white;
+    background-color: rgb(246, 241, 241);
     border: 1px solid blue;
     border-radius: 8px;
 }
 
+.icons {
+    width: 35px;
+    height: 35px;
+}
+
 footer :hover {
-    background-color: snow;
-}
-
-#pie {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#finales .card {
-    display: flex;
-    margin-left: 50%;
+    background-color: rgb(153, 155, 135);
 }
 
 .misc {
@@ -170,7 +177,7 @@ footer :hover {
 }
 
 .foto {
-    background-image: url(./imagenesweb/logo.jpeg);
+    background-color: beige;
 }
 
 #consulta {
@@ -191,4 +198,29 @@ summary {
 
 #muñeco p {
     font-size: 15px;
+}
+
+#consulta {
+
+    margin: 0 auto;
+}
+
+.muñequitos {
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 3px;
+
+}
+
+.muñe {
+
+    width: 95%;
+    height: auto;
+
 }

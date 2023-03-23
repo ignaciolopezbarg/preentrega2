@@ -8,13 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <img src="./imagenesweb/logo.jpeg" alt="logoempresa" width="70px">
+    <link rel="stylesheet" href="./estilos/css/style.css">
 </head>
 
 <body>
+
     <header>
-        <p id="encabezado">ILB CONSTRUCCIONES</p>
+        <h1 id="cabeza"> ILB CONSTRUCCIONES</h1>
+        <img src="./imagenesweb/logo.jpeg" alt="logoempresa" width="70px">
         <nav>
             <ul>
                 <li> <a href="index.html">Inicio</a></li>
@@ -25,39 +26,45 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2> BIENVENIDOS A LA PAGINA DE SERVICIOS INTEGRALES de la CONSTRUCCION</h2>
-        <article id="comentarios">
-            <p>Somos la solucion para sus problemas en el HOGAR-CONSORCIOS-OFICINAS-EMPRESAS.</p>
-            <p> MAS de 30 años en los distintos rubros, trabajos garantizados!!
-                Contactenos, presupuestos sin cargo, enviamos personal idoneo para
-                diagnosticar las fallas.</p>
-            <p>Nuestros servicios estan dirigidos a empresas, consorcios y casas o viviendas
-                unifamiliares. Todos los contactos que indicamos, pueden ser consultados!
-                Equipo de profesionales que otorgan un respaldo tecnico a cada uno de sus problemas.
-            </p>
-        </article>
-    </section>
+
     <main>
+
+        <h2> BIENVENIDOS A LA PAGINA DE SERVICIOS INTEGRALES de la CONSTRUCCION</h2>
+
+        <section class="bienvenida">
+            <article class="comentarios">
+                <p>Somos la solucion para sus problemas en el HOGAR-CONSORCIOS-OFICINAS-EMPRESAS.</p>
+                <p> MAS de 30 años en los distintos rubros, trabajos garantizados!!
+                    Contactenos, presupuestos sin cargo, enviamos personal idoneo para
+                    diagnosticar las fallas.</p>
+                <p>Nuestros servicios estan dirigidos a empresas, consorcios y casas o viviendas
+                    unifamiliares. Todos los contactos que indicamos, pueden ser consultados!
+                    Equipo de profesionales que otorgan un respaldo tecnico a cada uno de sus problemas.
+                </p>
+            </article>
+
+            <article>
+                <img src="./imagenesweb/siluetaedificio.jpeg" class="silueta" alt="silueta edificio">
+            </article>
+
+        </section>
+
         <div id="fotos">
             <article class="izq">
                 INSTALACIONES SANITARIAS
-                <img src="./imagenesweb/cambiosifon.jpeg" alt="sifon" width="95% " height="48%">
-                <img src="./imagenesweb/desagueyagua.jpeg" alt="desagues" width="95% " height="48%">
-
+                <img src="./imagenesweb/cambiosifon.jpeg" alt=" cambio sifon pileta cocina" width="95% " height="48%">
+                <img src="./imagenesweb/desagueyagua.jpeg" alt="desagues cloacales" width="95% " height="48%">
             </article>
 
             <article class="cent">INSTALACIONES ELECTRICAS
-                <img src="./imagenesweb/instalaciones_electricas.jpg" alt="tableros" width="95%" height="48%">
-                <img src="./imagenesweb/cielorrasosuspendido.jpeg" alt="cielosuspendido" width="95%" height="48%">
-
-            </article>>
+                <img src="./imagenesweb/instalaciones_electricas.jpg" alt="tableros principales" width="95%"
+                    height="48%">
+                <img src="./imagenesweb/cielorrasosuspendido.jpeg" alt="cielorraso suspendido" width="95%" height="48%">
             </article>
 
             <article class="der">PINTURA
-                <img src="./imagenesweb/pinturafachada.jpeg" alt="pinturafachada" width="95%" height="48%">
-                <img src="./imagenesweb/pinturaliving.jpeg" alt="pinturaliving" width="95%" height="48%">
-
+                <img src="./imagenesweb/pinturafachada.jpeg" alt="pintura fachada" width="95%" height="48%">
+                <img src="./imagenesweb/pinturaliving.jpeg" alt="pintura living" width="95%" height="48%">
             </article>
 
             <article class="bot">IMPERMEABILIZACIONES
@@ -75,36 +82,34 @@
                     evaluar las mejores soluciones y te enviamos el presupuesto a la brevedad.
                 </p>
             </article>
-
+            
         </div>
 
     </main>
 
     <footer>
-        <div id="pie">
-            <div id="inst">
-                <img src="./imagenesweb/R.png" alt="instagram" width="25px" height="25px" @ilb.cons>
-                <h6> @ilb.cons</h6>
-            </div>
+        <div>
+            <img src="./imagenesweb/R.png" class="icons" alt="Instagram">
+            <h6>Instagram</h6>
+        </div>
 
-            <div id="wapp">
-                <img src="./imagenesweb/R1.png" alt="wapp" width="25px" height="25px">
-                <h6> 11 99 99 87 56</h6>
+        <div>
+            <img src="./imagenesweb/R1.png" class="icons" alt="Wapp">
+            <h6> 11 99 99 87 56</h6>
+        </div>
 
-            </div>
-            <div id="mail">
-                <img src="./imagenesweb/blue-email-box-circle-png-transparent-icon-2.png" alt="email" width="25px"
-                    height="25px">
-                <h6> icons@gmail.com</h6>
-            </div>
-            <div id="tel">
-                <img src="./imagenesweb/Runo.jpeg" alt="telefono" width="25px" height="25px">
-                <h6>11 47 91 54 69</h6>
-            </div>
+        <div>
+            <img src="./imagenesweb/Runo.jpeg" class="icons" alt="telefono">
+            <h6>11 47 91 54 69</h6>
+        </div>
+
+        <div>
+            <img src="./imagenesweb/blue-email-box-circle-png-transparent-icon-2.png" class="icons" alt="email">
+            <h6>ilbconst@hotmail.com</h6>
         </div>
 
         <div id="finales">
-            <a class="card" href="#encabezado" class="boton"><img src="./imagenesweb/R3.png" alt="flecha" width="40px"
+            <a class="card" href="#cabeza" class="boton"><img src="./imagenesweb/R3.png" alt="flecha" width="40px"
                     height="20px">VOLVER</a>
         </div>
 
