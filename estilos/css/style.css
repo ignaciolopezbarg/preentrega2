@@ -1,8 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
 
 body {
     margin: 0 auto;
@@ -13,27 +9,39 @@ h1 {
     margin: 0 auto;
 }
 
-nav ul {
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid blue;
-    font-size: 16px;
-    display: flex;
+nav {
+    border: 1px blue;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3px;
+    padding-top: 3px;
     background-color: azure;
-    width: 95%;
-    height: 25px;
-    list-style-type: none;
-    justify-content: space-around;
+    align-items: center;
 }
 
 nav :hover {
-    background-color: rgb(212, 255, 0);
+    background-color: rgb(219, 228, 234);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+nav ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 h2 {
     width: 95%;
     border: 1px solid blue;
     border-radius: 8px;
-    background-color: gainsboro;
+    background-color: azure;
 }
 
 .bienvenida {
@@ -67,10 +75,7 @@ main #fotos {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 60% 1fr 1fr;
-    grid-template-areas: "izq      cent        der"
-        "bot      bot        bot"
-        "parrafos parrafos parrafos";
-
+    grid-template-areas: "izq      cent        der" "bot      bot        bot" "parrafos parrafos parrafos";
 }
 
 .izq {
@@ -109,18 +114,13 @@ main #fotos {
     margin-left: 2px;
     border-radius: 8px;
     margin-top: 1rem;
-
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
     main #fotos {
         grid-template-columns: auto;
         grid-template-rows: 25% 25% 25% 15% 10%;
-        grid-template-areas: "izq "
-            "cent"
-            "der"
-            "bot"
-            "parrafos";
+        grid-template-areas: "izq " "cent" "der" "bot" "parrafos";
     }
 }
 
@@ -128,27 +128,31 @@ nav ul {
     font-size: 11px;
 }
 
-footer div {
+footer {
+    width: 60%;
+    height: auto;
+    background-color: azure;
+    border: 1px solid blue;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+footer :hover {
+    background-color: rgb(212, 255, 0);
+}
+
+div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     padding-top: 4px;
     padding-bottom: 4px;
-    width: 60%;
-    height: auto;
-    background-color: rgb(246, 241, 241);
-    border: 1px solid blue;
-    border-radius: 8px;
 }
 
 .icons {
     width: 35px;
     height: 35px;
-}
-
-footer :hover {
-    background-color: rgb(153, 155, 135);
 }
 
 .misc {
@@ -188,7 +192,7 @@ footer :hover {
 details {
     background-color: azure;
     padding: 0.3rem;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 0.5rem;
 }
 
@@ -201,12 +205,11 @@ summary {
 }
 
 #consulta {
-
     margin: 0 auto;
 }
 
 .muñequitos {
-    border: 2px solid black;
+    border: 2px solid blue;
     border-radius: 8px;
     display: flex;
     width: 95%;
@@ -215,12 +218,11 @@ summary {
     align-items: center;
     justify-content: left;
     margin-bottom: 3px;
-
 }
 
 .muñe {
-
     width: 95%;
     height: auto;
-
 }
+
+/*# sourceMappingURL=style.css.map */
