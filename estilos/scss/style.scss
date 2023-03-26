@@ -42,46 +42,72 @@ nav {
 
 h2 {
     width: 95%;
-    border: 1px solid blue;
+    border: $color-bor;
     border-radius: $border-r;
     background-color: $color-back;
 }
 
 .bienvenida {
     display: grid;
-    width: 95%;
-    grid-template-areas: "comentarios silueta";
-    grid-template-columns: 65% 30%;
-    grid-template-rows: auto;
-    padding: 5px;
+    width: 100%;
+    padding-bottom: 5px;
+    grid-template-areas: "comentarios1 ar cost1"
+        " comentarios2 ab cost2";
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50% 50%;
 }
 
-.comentarios {
-    grid-area: comentarios;
-    margin-left: 3px;
-    border: 1px solid $color-bor;
-    border-radius: 8px;
-}
-
-.silueta {
-    grid-area: silueta;
+.comentarios1 {
+    grid-area: comentarios1;
     border: 1px solid $color-bor;
     border-radius: $border-r;
-    margin: 2rem;
-    width: 70%;
-    height: 90%;
 }
 
-main #fotos {
+.comentarios2 {
+    grid-area: comentarios2;
+    border: 1px solid $color-bor;
+    border-radius: $border-r;
+}
+
+.ar {
+    grid-area: ar;
+
+}
+
+.ab {
+    grid-area: ab;
+
+}
+
+.cost1 {
+    grid-area: cost1;
+}
+
+.cost2 {
+    grid-area: cost2;
+}
+
+@media screen and (max-width:600px) {
+    .bienvenida {
+        display: grid;
+        grid-template-areas: "ar      ab"
+            "comentarios1 comentarios1 "
+            "comentarios2 comentarios2"
+            " cost1 cost2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 26% 24% 24% 26%;
+    }
+}
+
+#fotos {
     width: 100%;
     padding: 3px;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 60% 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 60% 18% 22%;
     grid-template-areas: "izq      cent        der"
         "bot      bot        bot"
         "parrafos parrafos parrafos";
-
 }
 
 .izq {
@@ -124,9 +150,9 @@ main #fotos {
 }
 
 @media screen and (max-width:650px) {
-    main #fotos {
-        grid-template-columns: auto;
-        grid-template-rows: 25% 25% 25% 15% 10%;
+    #fotos {
+        grid-template-columns: 90%;
+        grid-template-rows: 24% 24% 24% 14% 14%;
         grid-template-areas: "izq "
             "cent"
             "der"
@@ -141,7 +167,7 @@ nav ul {
 
 footer {
     width: 60%;
-    height: auto;
+    height: 20%;
     background-color: $color-back;
     border: 1px solid $color-bor;
     border-radius: $border-r;
@@ -159,14 +185,12 @@ div {
     margin: 0 auto;
     padding-top: 4px;
     padding-bottom: 4px;
-
 }
 
 .icons {
     width: 35px;
     height: 35px;
 }
-
 
 .misc {
     display: flex;
@@ -218,7 +242,6 @@ summary {
 }
 
 #consulta {
-
     margin: 0 auto;
 }
 
@@ -236,8 +259,6 @@ summary {
 }
 
 .muñe {
-
     width: 95%;
     height: auto;
-
 }
