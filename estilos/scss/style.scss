@@ -1,3 +1,7 @@
+* {
+    @import "base/reset.scss";
+}
+
 $color-bor: blue;
 $color-back: azure;
 $border-r: 8px;
@@ -11,34 +15,7 @@ h1 {
     margin: 0 auto;
 }
 
-nav {
-    border: 1px $color-bor;
-    border-radius: $border-r;
-    width: 100%;
-    height: auto;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    background-color: $color-back;
-    align-items: center;
-
-    & :hover {
-        background-color: rgb(219, 228, 234);
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-
-        li {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            margin: 0 auto;
-            justify-content: center;
-
-        }
-    }
-}
+@import "componentes/nav.scss";
 
 h2 {
     width: 95%;
