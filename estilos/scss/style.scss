@@ -5,6 +5,9 @@
 $color-bor: blue;
 $color-back: azure;
 $border-r: 8px;
+$med-w: 120px;
+$med-h: 120px;
+
 
 body {
     margin: 0 auto;
@@ -27,41 +30,59 @@ h2 {
 .bienvenida {
     display: grid;
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     grid-template-areas: "comentarios1 ar cost1"
         " comentarios2 ab cost2";
     grid-template-columns: 50% 25% 25%;
     grid-template-rows: 50% 50%;
+    margin-left: 6px;
 }
 
 .comentarios1 {
     grid-area: comentarios1;
     border: 1px solid $color-bor;
     border-radius: $border-r;
+   
 }
 
 .comentarios2 {
     grid-area: comentarios2;
     border: 1px solid $color-bor;
     border-radius: $border-r;
+   
 }
 
 .ar {
     grid-area: ar;
-
+    width: $med-w;
+    height: $med-h;
+    width: $med-w;
+    height: $med-h;
 }
 
 .ab {
     grid-area: ab;
+    width: $med-w;
+    height: $med-h;
+    width: $med-w;
+    height: $med-h;
 
 }
 
 .cost1 {
     grid-area: cost1;
+    width: $med-w;
+    height: $med-h;
+    width: $med-w;
+    height: $med-h;
 }
 
 .cost2 {
     grid-area: cost2;
+    width: $med-w;
+    height: $med-h;
+    width: $med-w;
+    height: $med-h;
 }
 
 @media screen and (max-width:600px) {
@@ -77,14 +98,17 @@ h2 {
 }
 
 #fotos {
-    width: 100%;
-    padding: 3px;
+    width: 95%;
+    border: 2px black solid;
+    justify-content: center;
+
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 60% 18% 22%;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 54% 28% 18%;
     grid-template-areas: "izq      cent        der"
         "bot      bot        bot"
         "parrafos parrafos parrafos";
+
 }
 
 .izq {
@@ -112,7 +136,7 @@ h2 {
     border: 1px solid $color-bor;
     margin-left: 2px;
     border-radius: $border-r;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .parrafos {
@@ -122,14 +146,14 @@ h2 {
     border: 1px solid $color-bor;
     margin-left: 2px;
     border-radius: $border-r;
-    margin-top: 1rem;
+    margin-top: 2rem;
 
 }
 
 @media screen and (max-width:650px) {
     #fotos {
         grid-template-columns: 90%;
-        grid-template-rows: 24% 24% 24% 14% 14%;
+        grid-template-rows: 23% 23% 23% 16% 14%;
         grid-template-areas: "izq "
             "cent"
             "der"
