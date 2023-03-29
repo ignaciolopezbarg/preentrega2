@@ -72,14 +72,10 @@ h2 {
   grid-area: ar;
   width: 120px;
   height: 120px;
-  width: 120px;
-  height: 120px;
 }
 
 .ab {
   grid-area: ab;
-  width: 120px;
-  height: 120px;
   width: 120px;
   height: 120px;
 }
@@ -88,14 +84,10 @@ h2 {
   grid-area: cost1;
   width: 120px;
   height: 120px;
-  width: 120px;
-  height: 120px;
 }
 
 .cost2 {
   grid-area: cost2;
-  width: 120px;
-  height: 120px;
   width: 120px;
   height: 120px;
 }
@@ -104,17 +96,26 @@ h2 {
   .bienvenida {
     display: grid;
     grid-template-areas: "ar      ab" "comentarios1 comentarios1 " "comentarios2 comentarios2" " cost1 cost2";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 26% 24% 24% 26%;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 24% 26% 26% 24%;
   }
 }
+.comentarios1 {
+  font-size: 14px;
+}
+
+.comentarios2 {
+  font-size: 14px;
+}
+
 #fotos {
   width: 95%;
   border: 2px black solid;
-  justify-content: center;
   display: grid;
+  padding-bottom: 5px;
+  margin: 0 auto;
   grid-template-columns: 32% 32% 32%;
-  grid-template-rows: 54% 28% 18%;
+  grid-template-rows: 48% 28% 24%;
   grid-template-areas: "izq      cent        der" "bot      bot        bot" "parrafos parrafos parrafos";
 }
 
@@ -122,18 +123,24 @@ h2 {
   grid-area: izq;
   margin-left: 2px;
   margin-top: 2rem;
+  width: 95%;
+  height: 80%;
 }
 
 .cent {
   grid-area: cent;
   margin-left: 2px;
   margin-top: 2rem;
+  width: 95%;
+  height: 80%;
 }
 
 .der {
   grid-area: der;
   margin-left: 2px;
   margin-top: 2rem;
+  width: 95%;
+  height: 80%;
 }
 
 .bot {
@@ -151,18 +158,25 @@ h2 {
   grid-area: parrafos;
   text-align: center;
   border: 1px solid blue;
-  margin-left: 2px;
   border-radius: 8px;
   margin-top: 2rem;
 }
 
 @media screen and (max-width: 650px) {
   #fotos {
-    grid-template-columns: 90%;
-    grid-template-rows: 23% 23% 23% 16% 14%;
+    grid-template-columns: 95%;
+    grid-template-rows: 21% 21% 21% 20% 17%;
     grid-template-areas: "izq " "cent" "der" "bot" "parrafos";
   }
 }
+.bot {
+  font-size: 15px;
+}
+
+.parrafos {
+  font-size: 15px;
+}
+
 nav ul {
   font-size: 11px;
 }
@@ -204,6 +218,22 @@ div {
   width: 100%;
   background-color: antiquewhite;
   padding: 5px;
+}
+
+.col-12 {
+  border: 1px solid brown;
+}
+
+.col-10 {
+  border: 1px solid brown;
+}
+
+.col-8 {
+  border: 1px solid brown;
+}
+
+.textarea {
+  border: 1px solid brown;
 }
 
 #clientes {

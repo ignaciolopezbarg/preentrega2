@@ -7,6 +7,7 @@ $color-back: azure;
 $border-r: 8px;
 $med-w: 120px;
 $med-h: 120px;
+$border2 : 1px solid brown;
 
 
 body {
@@ -42,30 +43,28 @@ h2 {
     grid-area: comentarios1;
     border: 1px solid $color-bor;
     border-radius: $border-r;
-   
+
 }
 
 .comentarios2 {
     grid-area: comentarios2;
     border: 1px solid $color-bor;
     border-radius: $border-r;
-   
+
 }
 
 .ar {
     grid-area: ar;
     width: $med-w;
     height: $med-h;
-    width: $med-w;
-    height: $med-h;
+
 }
 
 .ab {
     grid-area: ab;
     width: $med-w;
     height: $med-h;
-    width: $med-w;
-    height: $med-h;
+
 
 }
 
@@ -73,16 +72,14 @@ h2 {
     grid-area: cost1;
     width: $med-w;
     height: $med-h;
-    width: $med-w;
-    height: $med-h;
+
 }
 
 .cost2 {
     grid-area: cost2;
     width: $med-w;
     height: $med-h;
-    width: $med-w;
-    height: $med-h;
+
 }
 
 @media screen and (max-width:600px) {
@@ -92,22 +89,27 @@ h2 {
             "comentarios1 comentarios1 "
             "comentarios2 comentarios2"
             " cost1 cost2";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 26% 24% 24% 26%;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 24% 26% 26% 24%;
     }
 }
-
+.comentarios1{
+    font-size: 14px;
+}
+.comentarios2{
+    font-size: 14px;
+}
 #fotos {
     width: 95%;
     border: 2px black solid;
-    justify-content: center;
-
     display: grid;
+    padding-bottom: 5px;
+    margin: 0 auto;
     grid-template-columns: 32% 32% 32%;
-    grid-template-rows: 54% 28% 18%;
+    grid-template-rows: 48% 28% 24%;
     grid-template-areas: "izq      cent        der"
-        "bot      bot        bot"
-        "parrafos parrafos parrafos";
+                          "bot      bot        bot"
+                         "parrafos parrafos parrafos";
 
 }
 
@@ -115,18 +117,26 @@ h2 {
     grid-area: izq;
     margin-left: 2px;
     margin-top: 2rem;
+    width: 95%;
+    height: 80%;
 }
 
 .cent {
     grid-area: cent;
     margin-left: 2px;
     margin-top: 2rem;
+    width: 95%;
+    height: 80%;
+
 }
 
 .der {
     grid-area: der;
     margin-left: 2px;
     margin-top: 2rem;
+    width: 95%;
+    height: 80%;
+
 }
 
 .bot {
@@ -137,6 +147,8 @@ h2 {
     margin-left: 2px;
     border-radius: $border-r;
     margin-top: 2rem;
+   
+    
 }
 
 .parrafos {
@@ -144,22 +156,28 @@ h2 {
     grid-area: parrafos;
     text-align: center;
     border: 1px solid $color-bor;
-    margin-left: 2px;
     border-radius: $border-r;
     margin-top: 2rem;
-
+    
 }
 
 @media screen and (max-width:650px) {
     #fotos {
-        grid-template-columns: 90%;
-        grid-template-rows: 23% 23% 23% 16% 14%;
+        grid-template-columns: 95%;
+        grid-template-rows: 21% 21% 21% 20% 17%;
         grid-template-areas: "izq "
             "cent"
             "der"
             "bot"
             "parrafos";
     }
+}
+.bot{ 
+
+    font-size: 15px;
+}
+.parrafos{ 
+    font-size: 15px;
 }
 
 nav ul {
@@ -179,6 +197,22 @@ nav ul {
     width: 100%;
     background-color: antiquewhite;
     padding: 5px;
+}
+
+.col-12 {
+    border: $border2;
+}
+
+.col-10 {
+    border: $border2;
+}
+
+.col-8 {
+    border: $border2;
+}
+
+.textarea {
+    border: $border2;
 }
 
 #clientes {
