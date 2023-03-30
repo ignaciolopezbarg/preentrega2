@@ -9,7 +9,6 @@ $med-w: 120px;
 $med-h: 120px;
 $border2 : 1px solid brown;
 
-
 body {
     margin: 0 auto;
 }
@@ -43,43 +42,36 @@ h2 {
     grid-area: comentarios1;
     border: 1px solid $color-bor;
     border-radius: $border-r;
-
 }
 
 .comentarios2 {
     grid-area: comentarios2;
     border: 1px solid $color-bor;
     border-radius: $border-r;
-
 }
 
 .ar {
     grid-area: ar;
     width: $med-w;
     height: $med-h;
-
 }
 
 .ab {
     grid-area: ab;
     width: $med-w;
     height: $med-h;
-
-
 }
 
 .cost1 {
     grid-area: cost1;
     width: $med-w;
     height: $med-h;
-
 }
 
 .cost2 {
     grid-area: cost2;
     width: $med-w;
     height: $med-h;
-
 }
 
 @media screen and (max-width:600px) {
@@ -93,12 +85,15 @@ h2 {
         grid-template-rows: 24% 26% 26% 24%;
     }
 }
-.comentarios1{
+
+.comentarios1 {
     font-size: 14px;
 }
-.comentarios2{
+
+.comentarios2 {
     font-size: 14px;
 }
+
 #fotos {
     width: 95%;
     border: 2px black solid;
@@ -108,9 +103,8 @@ h2 {
     grid-template-columns: 32% 32% 32%;
     grid-template-rows: 48% 28% 24%;
     grid-template-areas: "izq      cent        der"
-                          "bot      bot        bot"
-                         "parrafos parrafos parrafos";
-
+        "bot      bot        bot"
+        "parrafos parrafos parrafos";
 }
 
 .izq {
@@ -127,7 +121,6 @@ h2 {
     margin-top: 2rem;
     width: 95%;
     height: 80%;
-
 }
 
 .der {
@@ -136,7 +129,6 @@ h2 {
     margin-top: 2rem;
     width: 95%;
     height: 80%;
-
 }
 
 .bot {
@@ -147,8 +139,6 @@ h2 {
     margin-left: 2px;
     border-radius: $border-r;
     margin-top: 2rem;
-   
-    
 }
 
 .parrafos {
@@ -158,7 +148,6 @@ h2 {
     border: 1px solid $color-bor;
     border-radius: $border-r;
     margin-top: 2rem;
-    
 }
 
 @media screen and (max-width:650px) {
@@ -172,11 +161,13 @@ h2 {
             "parrafos";
     }
 }
-.bot{ 
+
+.bot {
 
     font-size: 15px;
 }
-.parrafos{ 
+
+.parrafos {
     font-size: 15px;
 }
 
@@ -232,7 +223,7 @@ nav ul {
 }
 
 #consulta {
-    background-color: blanchedalmond;
+    background-color: rgb(210, 229, 247);
     width: 95%;
 }
 
@@ -247,10 +238,6 @@ summary {
     list-style-type: circle;
 }
 
-#muñeco p {
-    font-size: 15px;
-}
-
 #consulta {
     margin: 0 auto;
 }
@@ -263,12 +250,19 @@ summary {
     height: auto;
     margin: 0 auto;
     align-items: center;
-    justify-content: left;
     margin-bottom: 3px;
-
+    background-color: rgba(219, 228, 234, 50%);
 }
 
-.muñe {
+
+.mune {
     width: 95%;
     height: auto;
+    & :hover {
+        transform: rotate (30deg);
+    }
+}
+
+.fondo {
+    background-image: url("./desag.gif");
 }
