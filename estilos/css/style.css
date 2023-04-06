@@ -5,27 +5,15 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0 auto;
-}
-
-h1 {
-  background-color: aliceblue;
-  margin: 0 auto;
-}
-
 nav {
-  border: 1px blue;
-  border-radius: 8px;
-  width: 100%;
-  height: auto;
-  padding-bottom: 3px;
-  padding-top: 3px;
+  border: 1px solid blue;
+  border-radius: 50px;
+  width: 75%;
+  margin: 0 auto;
   background-color: azure;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-}
-nav :hover {
-  background-color: rgb(219, 228, 234);
 }
 nav ul {
   display: flex;
@@ -37,6 +25,38 @@ nav ul li {
   font-size: 20px;
   margin: 0 auto;
   justify-content: center;
+}
+
+footer {
+  width: 70%;
+  background-color: azure;
+  border: 1px solid blue;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+footer :hover {
+  background-color: rgb(243, 247, 249);
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+footer div .icons {
+  width: 38px;
+  height: 38px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  background-color: aliceblue;
+  margin: 0 auto;
 }
 
 h2 {
@@ -92,7 +112,7 @@ h2 {
   height: 120px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .bienvenida {
     display: grid;
     grid-template-areas: "ar      ab" "comentarios1 comentarios1 " "comentarios2 comentarios2" " cost1 cost2";
@@ -100,6 +120,22 @@ h2 {
     grid-template-rows: 24% 26% 26% 24%;
   }
 }
+.ar {
+  height: auto;
+}
+
+.ab {
+  height: auto;
+}
+
+.cost1 {
+  height: 100px;
+}
+
+.cost2 {
+  height: auto;
+}
+
 .comentarios1 {
   font-size: 14px;
 }
@@ -181,32 +217,6 @@ nav ul {
   font-size: 11px;
 }
 
-footer {
-  width: 95%;
-  height: 20%;
-  background-color: azure;
-  border: 1px solid blue;
-  border-radius: 8px;
-  margin: 0 auto;
-}
-footer :hover {
-  background-color: rgb(212, 255, 0);
-}
-
-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 auto;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.icons {
-  width: 38px;
-  height: 38px;
-}
-
 .misc {
   display: flex;
   background-color: antiquewhite;
@@ -249,7 +259,8 @@ div {
 }
 
 .foto {
-  background-color: beige;
+  background-color: lightblue;
+  width: 70%;
 }
 
 #consulta {
@@ -276,24 +287,31 @@ summary {
   border: 2px solid blue;
   border-radius: 8px;
   display: flex;
-  width: 95%;
+  width: 75%;
   height: auto;
   margin: 0 auto;
   align-items: center;
-  margin-bottom: 3px;
+  margin: 0 auto;
   background-color: rgba(219, 228, 234, 0.5);
+}
+.muñequitos :hover {
+  background-color: azure;
 }
 
 .mune {
   width: 95%;
   height: auto;
 }
-.mune :hover {
-  transform: rotate 30deg;
+
+#carouselExampleInterval {
+  background-color: burlywood;
+  width: 300px;
+  height: 200px;
 }
 
-.fondo {
-  background-image: url("./desag.gif");
+.area {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

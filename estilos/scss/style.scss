@@ -8,6 +8,8 @@ $border-r: 8px;
 $med-w: 120px;
 $med-h: 120px;
 $border2 : 1px solid brown;
+@import "componentes/nav.scss";
+@import "componentes/footer.scss";
 
 body {
     margin: 0 auto;
@@ -17,8 +19,6 @@ h1 {
     background-color: aliceblue;
     margin: 0 auto;
 }
-
-@import "componentes/nav.scss";
 
 h2 {
     width: 95%;
@@ -74,7 +74,7 @@ h2 {
     height: $med-h;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:400px) {
     .bienvenida {
         display: grid;
         grid-template-areas: "ar      ab"
@@ -84,6 +84,21 @@ h2 {
         grid-template-columns: 48% 48%;
         grid-template-rows: 24% 26% 26% 24%;
     }
+}
+
+.ar {
+    height: auto;
+}
+
+.ab {
+    height: auto;
+}
+
+.cost1 {
+    height: 100px;
+}
+.cost2{
+    height: auto;
 }
 
 .comentarios1 {
@@ -175,8 +190,6 @@ nav ul {
     font-size: 11px;
 }
 
-@import "componentes/footer.scss";
-
 .misc {
     display: flex;
     background-color: antiquewhite;
@@ -219,7 +232,8 @@ nav ul {
 }
 
 .foto {
-    background-color: beige;
+    background-color: lightblue;
+    width: 70%;
 }
 
 #consulta {
@@ -246,23 +260,30 @@ summary {
     border: 2px solid $color-bor;
     border-radius: $border-r;
     display: flex;
-    width: 95%;
+    width: 75%;
     height: auto;
     margin: 0 auto;
     align-items: center;
-    margin-bottom: 3px;
+    margin: 0 auto;
     background-color: rgba(219, 228, 234, 50%);
-}
 
+    & :hover {
+        background-color: azure;
+    }
+}
 
 .mune {
     width: 95%;
     height: auto;
-    & :hover {
-        transform: rotate (30deg);
-    }
 }
 
-.fondo {
-    background-image: url("./desag.gif");
+#carouselExampleInterval {
+    background-color: burlywood;
+    width: 300px;
+    height: 200px;
+}
+
+.area {
+    display: flex;
+    justify-content: center;
 }

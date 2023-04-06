@@ -1,17 +1,13 @@
 nav {
-    border: 1px $color-bor;
-    border-radius: $border-r;
-    width: 100%;
-    height: auto;
-    padding-bottom: 3px;
-    padding-top: 3px;
+    border: 1px solid $color-bor;
+    border-radius: 50px;
+    width: 75%;
+    margin: 0 auto;
     background-color: $color-back;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
-    & :hover {
-        background-color: rgb(219, 228, 234);
-    }
-
+    
     ul {
         display: flex;
         flex-direction: column;
